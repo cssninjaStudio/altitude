@@ -169,6 +169,23 @@
   }
 }
 
+//RTL adjustment
+[dir="rtl"] .panel {
+  .panel-header {
+    .close-button {
+      transform: rotate(180deg);
+    }
+  }
+
+  .panel-conversations-body {
+    .panel-conversation {
+      button {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   .panel {
     transform: translateX(0);

@@ -1,5 +1,5 @@
 /* ==========================================================================
-1. Inbox
+0. Inbox
 ========================================================================== */
 
 .inbox-wrapper {
@@ -655,7 +655,7 @@
 }
 
 /* ==========================================================================
-2. Inbox action
+Inbox action
 ========================================================================== */
 
 .inbox-action {
@@ -684,7 +684,7 @@
 }
 
 /* ==========================================================================
-3. Media Queries
+4. Media Queries
 ========================================================================== */
 
 @media (max-width: 767px) {
@@ -706,7 +706,7 @@
   }
 
   .inbox-sidebar {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% #{$transform-direction}));
     z-index: 1 !important;
     transition: all 0.3s !important;
 
@@ -731,7 +731,7 @@
 
   .inbox-message-details {
     #{$start-direction}: 0 !important;
-    transform: translateX(100%);
+    transform: translateX(calc(100% * #{$transform-direction}));
 
     &.mobile-active {
       transform: translateX(0);
@@ -824,7 +824,7 @@
   .inbox-wrapper {
     .inbox-wrapper-inner {
       .inbox-sidebar {
-        transform: translateX(-100%);
+        transform: translateX(calc(-100% * #{$transform-direction}));
         z-index: 1 !important;
         max-width: 300px;
         transition: all 0.3s !important;
@@ -858,7 +858,7 @@
 
   .inbox-message-details {
     #{$start-direction}: 0 !important;
-    transform: translateX(100%);
+    transform: translateX(calc(100% * #{$transform-direction}));
 
     &.mobile-active {
       transform: translateX(0);
@@ -940,7 +940,7 @@
     #{$end-direction}: 0 !important;
     #{$start-direction}: unset !important;
     width: 68% !important;
-    transform: translateX(100%);
+    transform: translateX(calc(100% * #{$transform-direction}));
     transition: all 0.3s;
 
     &.tablet-active {
