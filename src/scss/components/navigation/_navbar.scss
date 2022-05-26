@@ -139,7 +139,7 @@ Navbar
   }
 
   &.is-pushed {
-    transform: translateX(250px);
+    transform: translateX(calc(250px * #{$transform-direction}));
   }
 
   &.is-active {

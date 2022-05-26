@@ -4,7 +4,7 @@ Icon Sidebar
 
 .icon-sidebar {
   background: var(--sidebar-default-bg-color);
-  border-right: 1px solid var(--sidebar-default-border-color);
+  border-#{$end-direction}: 1px solid var(--sidebar-default-border-color);
   position: fixed;
   top: 0;
   #{$start-direction}: 0;
@@ -131,7 +131,7 @@ Icon Sidebar
       .dot {
         position: absolute;
         top: -0.05rem;
-        right: -0.05rem;
+        #{$end-direction}: -0.05rem;
         width: 0.8rem;
         height: 0.8rem;
         border-radius: 100px;
@@ -154,10 +154,10 @@ Menu Sidebar
 
 .menu-sidebar {
   background: var(--sidebar-default-bg-color);
-  border-right: 1px solid var(--sidebar-default-border-color);
+  border-#{$end-direction}: 1px solid var(--sidebar-default-border-color);
   position: fixed;
   top: 0;
-  transform: translateX(-101%);
+  transform: translateX(calc(-101% * #{$transform-direction}));
   #{$start-direction}: 80px;
   height: 100%;
   width: 250px;
@@ -235,7 +235,7 @@ Menu Sidebar
           display: flex;
           align-items: center;
           min-height: 34px;
-          border-right: 3px solid var(--wrap-border-color);
+          border-#{$end-direction}: 3px solid var(--wrap-border-color);
           margin-#{$end-direction}: 1.25rem;
           margin-#{$start-direction}: 0.75rem;
           font-family: var(--font);
@@ -249,11 +249,12 @@ Menu Sidebar
               content: "";
               position: absolute;
               top: 0;
-              right: -3px;
+              #{$end-direction}: -3px;
               height: 100%;
               width: 4px;
               background: var(--primary);
-              border-radius: 5rem 0 0 5rem;
+              border-top-#{$start-direction}-radius: 5rem;
+              border-bottom-#{$start-direction}-radius: 5rem;
             }
           }
         }
@@ -288,10 +289,10 @@ Menu Sidebar
 
 @media (max-width: 767px) {
   .icon-sidebar {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% * #{$transform-direction}));
 
     &.is-icon-sidebar-translated-mobile {
-      transform: translateX(calc(100% - 80px)) !important;
+      transform: translateX(calc((100% - 80px) * #{$transform-direction})) !important;
     }
   }
 
@@ -301,17 +302,17 @@ Menu Sidebar
     max-width: calc(100% - 80px);
 
     &.is-menu-sidebar-translated-mobile {
-      transform: translateX(80px) !important;
+      transform: translateX(calc(80px * #{$transform-direction})) !important;
     }
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .icon-sidebar {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% * #{$transform-direction}));
 
     &.is-icon-sidebar-translated-mobile {
-      transform: translateX(calc(100% - 80px)) !important;
+      transform: translateX(calc((100% - 80px) * #{$transform-direction})) !important;
     }
   }
 
@@ -321,17 +322,17 @@ Menu Sidebar
     max-width: 250px;
 
     &.is-menu-sidebar-translated-mobile {
-      transform: translateX(80px) !important;
+      transform: translateX(calc(80px * #{$transform-direction})) !important;
     }
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .icon-sidebar {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% * #{$transform-direction}));
 
     &.is-icon-sidebar-translated-mobile {
-      transform: translateX(calc(100% - 80px)) !important;
+      transform: translateX(calc((100% - 80px) * #{$transform-direction})) !important;
     }
   }
 
@@ -341,7 +342,7 @@ Menu Sidebar
     max-width: 250px;
 
     &.is-menu-sidebar-translated-mobile {
-      transform: translateX(80px) !important;
+      transform: translateX(calc(80px * #{$transform-direction})) !important;
     }
   }
 }

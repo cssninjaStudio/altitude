@@ -1,3 +1,7 @@
+/* ==========================================================================
+Circles
+========================================================================== */
+
 .circles-widget {
   @include altitudeCard();
 
@@ -8,7 +12,6 @@
 
     .statistic {
       flex: 1 1 0px;
-      //text-align: center;
 
       .circle-container {
         position: relative;

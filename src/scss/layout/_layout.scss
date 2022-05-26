@@ -8,12 +8,11 @@ Main wrapper
   margin-#{$start-direction}: 80px;
   min-height: 100vh;
   background: var(--dashboard-bg-color);
-  padding: 4rem 3rem 0 3rem;
-  padding-bottom: 80px;
+  padding: 4rem 3rem 5rem 3rem;
   transition: all 0.3s;
 
   &.is-pushed {
-    transform: translateX(250px);
+    transform: translateX(calc(250px * #{$transform-direction}));
   }
 
   &.is-expanded {
@@ -62,7 +61,7 @@ Main wrapper
   .altitude-wrapper {
     width: 100% !important;
     margin: 0 !important;
-    padding: 0 1rem !important;
+    padding: 4rem 1rem 5rem 1rem !important;
   }
 }
 
