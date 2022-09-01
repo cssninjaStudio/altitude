@@ -25,8 +25,7 @@ Alpine.persistedStore("app", {
 //Start Alpine JS
 Alpine.start()
 
-import { env } from "./libs/utils/constants";
-import { switchDemoImages, insertBgImages } from "./libs/utils/utils";
+import { insertBgImages } from "./libs/utils/utils";
 import { initLazyLoading } from './libs/utils/lazyload';
 import "./libs/demo";
 import "./libs/components";
@@ -34,8 +33,6 @@ import "./libs/pages";
 
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
-    //Switch demo images
-    const changeImages = switchDemoImages(env);
 
     //Lazy Loading
     const lazy = initLazyLoading();
