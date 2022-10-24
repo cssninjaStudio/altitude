@@ -15,7 +15,7 @@ Altitude is built with [Bulma](https://bulma.io) and [Alpine JS](https://github.
 * Gulp 4 and nodejs 14.x (minimum)
 * Bulma 0.9.x
 * ES6 support
-* Alpine v3
+* Alpine v3.x
 * RTL support
 
 ## 👌 Usage
