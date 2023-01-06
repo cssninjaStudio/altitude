@@ -3,8 +3,6 @@
 
 [![cssninja-discord](https://img.shields.io/discord/785473098069311510?label=join%20us%20on%20discord&color=6944EC)](https://go.cssninja.io/discord/)
 
-![Screenshot](https://media.cssninja.io/products/altitude/product.png "Altitude")
-
 ## ✌️ preview
 
 Check out the live demo by clicking [here](https://altitude.cssninja.io/). 
@@ -12,7 +10,7 @@ Altitude is built with [Bulma](https://bulma.io) and [Alpine JS](https://github.
 
 ## 👍 Features
 
-* Gulp 4 and nodejs 14.x (minimum)
+* Astro 1.x
 * Bulma 0.9.x
 * ES6 support
 * Alpine v3.x
