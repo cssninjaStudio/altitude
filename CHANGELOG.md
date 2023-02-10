@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/cssninjaStudio/altitude/compare/v2.0.0...v2.1.0) (2023-02-10)
+
+
+### Features
+
+* upgrade to Astro v2 ([6ab57aa](https://github.com/cssninjaStudio/altitude/commit/6ab57aafa26db4d5ac8b8466c383d5a85af11c7c))
+
 ## [2.0.0](https://github.com/cssninjaStudio/altitude/compare/v1.0.1...v2.0.0) (2023-01-06)
 
 
