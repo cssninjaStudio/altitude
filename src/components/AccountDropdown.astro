@@ -1,12 +1,7 @@
-<div
-  x-data="initDropdown()"
-  @click.away="close()"
-  class="dropdown-wrap is-right"
-  :class="{
+<div x-data="initDropdown()" @click.away="close()" class="dropdown-wrap is-right" :class=`{
     'is-active': open,
     '': !open
-  }"
->
+  }`>
   <button @click="toggle()" class="dropdown-button has-image">
     <span class="avatar is-xs is-reset mask mask-blob">
       <img src="/img/avatars/55.jpg" alt="" />
