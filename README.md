@@ -6,15 +6,13 @@
 ## ✌️ preview
 
 Check out the live demo by clicking [here](https://altitude.cssninja.io/). 
-Altitude is built with [Bulma](https://bulma.io) and [Alpine JS](https://github.com/alpinejs/alpine).
+Altitude is built with [Astro](https://astro.build), [Bulma](https://bulma.io) and [Alpine JS](https://github.com/alpinejs/alpine).
 
 ## 👍 Features
 
-* Astro 1.x
+* Astro v4.x
 * Bulma 0.9.x
-* ES6 support
 * Alpine v3.x
-* RTL support
 
 ## 👌 Usage
 

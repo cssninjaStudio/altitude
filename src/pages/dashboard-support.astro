@@ -1,15 +1,11 @@
 ---
-import Layout from '../layouts/Default.astro';
-import SupportTeamDropdown from '../components/SupportTeamDropdown.astro';
+import Layout from '../layouts/Default.astro'
+import SupportTeamDropdown from '../components/SupportTeamDropdown.astro'
 const title = 'Support Dashboard'
 ---
 
 <Layout title={title}>
-  <div
-    x-data="initSupportDashboard()"
-    x-init="initAssignedTickets()"
-    class="support-dashboard"
-  >
+  <div x-data="initSupportDashboard()" x-init="initAssignedTickets()" class="support-dashboard">
     <div class="columns">
       <div class="column is-8">
         <div class="columns is-multiline b-columns-half-tablet-p">
@@ -33,12 +29,10 @@ const title = 'Support Dashboard'
               </div>
               <div class="box-meta">
                 <p>My waiting time: 12 minutes</p>
-                <p>
-                  The average wait time for the support team is about 26 minutes.
-                </p>
+                <p>The average wait time for the support team is about 26 minutes.</p>
                 <a class="arrow-link rem-85">
                   <span>View Reports</span>
-                  <i class="iconify" data-icon="feather:arrow-right"></i>
+                  <iconify-icon class="iconify" icon="lucide:arrow-right"></iconify-icon>
                 </a>
               </div>
             </div>
@@ -101,13 +95,10 @@ const title = 'Support Dashboard'
               </div>
               <div class="box-meta">
                 <p>32 of 254 tickets assigned to me</p>
-                <p>
-                  The average number of daily tickets assigned to you is around 21
-                  / day.
-                </p>
+                <p>The average number of daily tickets assigned to you is around 21 / day.</p>
                 <a class="arrow-link rem-85">
                   <span>View Reports</span>
-                  <i class="iconify" data-icon="feather:arrow-right"></i>
+                  <iconify-icon class="iconify" icon="lucide:arrow-right"></iconify-icon>
                 </a>
               </div>
             </div>
@@ -122,13 +113,10 @@ const title = 'Support Dashboard'
 
               <div class="box-meta">
                 <p>0 of my tickets are escalated</p>
-                <p>
-                  There is currently a total of 52 escalated tickets that have
-                  been found.
-                </p>
+                <p>There is currently a total of 52 escalated tickets that have been found.</p>
                 <a class="arrow-link rem-85">
                   <span>View Reports</span>
-                  <i class="iconify" data-icon="feather:arrow-right"></i>
+                  <iconify-icon class="iconify" icon="lucide:arrow-right"></iconify-icon>
                 </a>
               </div>
             </div>
@@ -139,16 +127,16 @@ const title = 'Support Dashboard'
               <h3 class="box-title has-text-centered">Channels</h3>
               <div class="channels">
                 <div class="channel-icon">
-                  <i class="iconify" data-icon="mdi:email"></i>
+                  <iconify-icon class="iconify" icon="mdi:email"></iconify-icon>
                 </div>
                 <div class="channel-icon">
-                  <i class="iconify" data-icon="fa6-solid:phone-flip"></i>
+                  <iconify-icon class="iconify" icon="fa6-solid:phone-flip"></iconify-icon>
                 </div>
                 <div class="channel-icon">
-                  <i class="iconify" data-icon="fa-brands:twitter"></i>
+                  <iconify-icon class="iconify" icon="fa-brands:twitter"></iconify-icon>
                 </div>
                 <div class="channel-icon">
-                  <i class="iconify" data-icon="fa-brands:facebook-f"></i>
+                  <iconify-icon class="iconify" icon="fa-brands:facebook-f"></iconify-icon>
                 </div>
               </div>
               <div id="supportBar"></div>
@@ -270,17 +258,12 @@ const title = 'Support Dashboard'
 
           <a class="link-group">
             <h3 class="name">Documentation</h3>
-            <p class="rem-80">
-              Technical overviews, how-tos and tutorials, release notes and
-              support material.
-            </p>
+            <p class="rem-80">Technical overviews, how-tos and tutorials, release notes and support material.</p>
           </a>
 
           <a class="link-group">
             <h3 class="name">FAQs</h3>
-            <p class="rem-80">
-              DevOps and development guidelines to help you get started fast.
-            </p>
+            <p class="rem-80">DevOps and development guidelines to help you get started fast.</p>
           </a>
         </div>
       </div>

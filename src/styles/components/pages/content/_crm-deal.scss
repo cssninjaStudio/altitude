@@ -177,6 +177,7 @@ Deal Subheader
 
     .owner-meta {
       margin-#{$start-direction}: 0.75rem;
+      margin-#{$end-direction}: 0.75rem;
       line-height: 1.2;
 
       span {

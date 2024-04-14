@@ -1,18 +1,29 @@
 ---
-import Layout from '../layouts/Default.astro';
-import CrmBoardDropdown from '../components/CrmBoardDropdown.astro';
+import Layout from '../layouts/Default.astro'
+import CrmBoardDropdown from '../components/CrmBoardDropdown.astro'
 const title = 'Kanban Board'
 ---
 
-<Layout title={title}>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.6/dragula.min.css" integrity="sha512-49xW99xceMN8dDoWaoCaXvuVMjnUctHv/jOlZxzFSMJYhqDZmSF/UnM6pLJjQu0YEBLSdO1DP0er6rUdm8/VqA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style is:global>
+  .dashboard-content {
+    padding-bottom: 0 !important;
+  }
 
-  <div
-    id="kanban-boards"
-    class="boards-wrapper"
-    x-data="initCrmKanban()"
-    x-init="setupKanban()"
-  >
+  .zod-wrapper {
+    padding-bottom: 0 !important;
+  }
+</style>
+
+<Layout title={title}>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.6/dragula.min.css"
+    integrity="sha512-49xW99xceMN8dDoWaoCaXvuVMjnUctHv/jOlZxzFSMJYhqDZmSF/UnM6pLJjQu0YEBLSdO1DP0er6rUdm8/VqA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <div id="kanban-boards" class="boards-wrapper" x-data="initCrmKanban()" x-init="setupKanban()">
     <!-- Boards Wrapper -->
     <div class="boards">
       <div class="board-columns">
@@ -37,17 +48,10 @@ const title = 'Kanban Board'
             <div class="items">
               <!-- Placeholder -->
               <div class="column-placeholder">
-                <img
-                  class="placeholder-image"
-                  src="/img/illustrations/kanban-placeholder.svg"
-                  alt=""
-                />
+                <img class="placeholder-image" src="/img/illustrations/kanban-placeholder.svg" alt="" />
                 <div class="placeholder-text has-text-centered">
                   <h3>No Deals</h3>
-                  <p>
-                    Nothing in here yet. Create a deal or drag an exiting one in
-                    here.
-                  </p>
+                  <p>Nothing in here yet. Create a deal or drag an exiting one in here.</p>
                 </div>
               </div>
               <!-- Single Deal -->
@@ -86,10 +90,7 @@ const title = 'Kanban Board'
                     <div class="box-title">Atlassian team training</div>
                     <div class="time">4 days ago</div>
                   </a>
-                  <img
-                    src="/img/logo/companies/atlassian.svg"
-                    alt="Company logo"
-                  />
+                  <img src="/img/logo/companies/atlassian.svg" alt="Company logo" />
                 </div>
 
                 <div class="box-meta">
@@ -161,17 +162,10 @@ const title = 'Kanban Board'
             <div class="items">
               <!-- Placeholder -->
               <div class="column-placeholder">
-                <img
-                  class="placeholder-image"
-                  src="/img/illustrations/kanban-placeholder.svg"
-                  alt=""
-                />
+                <img class="placeholder-image" src="/img/illustrations/kanban-placeholder.svg" alt="" />
                 <div class="placeholder-text has-text-centered">
                   <h3>No Deals</h3>
-                  <p>
-                    Nothing in here yet. Create a deal or drag an exiting one in
-                    here.
-                  </p>
+                  <p>Nothing in here yet. Create a deal or drag an exiting one in here.</p>
                 </div>
               </div>
             </div>
@@ -196,17 +190,10 @@ const title = 'Kanban Board'
             <div class="items">
               <!-- Placeholder -->
               <div class="column-placeholder">
-                <img
-                  class="placeholder-image"
-                  src="/img/illustrations/kanban-placeholder.svg"
-                  alt=""
-                />
+                <img class="placeholder-image" src="/img/illustrations/kanban-placeholder.svg" alt="" />
                 <div class="placeholder-text has-text-centered">
                   <h3>No Deals</h3>
-                  <p>
-                    Nothing in here yet. Create a deal or drag an exiting one in
-                    here.
-                  </p>
+                  <p>Nothing in here yet. Create a deal or drag an exiting one in here.</p>
                 </div>
               </div>
               <!-- Single Deal -->
@@ -240,32 +227,32 @@ const title = 'Kanban Board'
 
               <!-- Single Deal -->
               <div class="kanban-box">
-                  <div class="box-head">
-                    <a href="/content-crm-deal" class="box-title-wrap">
-                      <div class="box-title">Slack redesign</div>
-                      <div class="time">1 month ago</div>
-                    </a>
-                    <img src="/img/logo/companies/slack.svg" alt="Company logo" />
-                  </div>
-    
-                  <div class="box-meta">
-                    <div class="avatars">
-                      <div class="avatar is-xxs">
-                        <img src="/img/avatars/22.jpg" alt="user photo" />
-                      </div>
-                      <div class="avatar is-xxs">
-                        <img src="/img/avatars/19.jpg" alt="user photo" />
-                      </div>
-                      <div class="avatar is-xxs">
-                        <img src="/img/avatars/48.jpg" alt="user photo" />
-                      </div>
-                      <div class="avatar is-fake is-xxs is-count">
-                        <span>+7</span>
-                      </div>
-                    </div>
-                    <div class="deal-value">$42,000</div>
-                  </div>
+                <div class="box-head">
+                  <a href="/content-crm-deal" class="box-title-wrap">
+                    <div class="box-title">Slack redesign</div>
+                    <div class="time">1 month ago</div>
+                  </a>
+                  <img src="/img/logo/companies/slack.svg" alt="Company logo" />
                 </div>
+
+                <div class="box-meta">
+                  <div class="avatars">
+                    <div class="avatar is-xxs">
+                      <img src="/img/avatars/22.jpg" alt="user photo" />
+                    </div>
+                    <div class="avatar is-xxs">
+                      <img src="/img/avatars/19.jpg" alt="user photo" />
+                    </div>
+                    <div class="avatar is-xxs">
+                      <img src="/img/avatars/48.jpg" alt="user photo" />
+                    </div>
+                    <div class="avatar is-fake is-xxs is-count">
+                      <span>+7</span>
+                    </div>
+                  </div>
+                  <div class="deal-value">$42,000</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -278,6 +265,10 @@ const title = 'Kanban Board'
       </div>
     </div>
   </div>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.6/dragula.min.js" integrity="sha512-MrA7WH8h42LMq8GWxQGmWjrtalBjrfIzCQ+i2EZA26cZ7OBiBd/Uct5S3NP9IBqKx5b+MMNH1PhzTsk6J9nPQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.6/dragula.min.js"
+    integrity="sha512-MrA7WH8h42LMq8GWxQGmWjrtalBjrfIzCQ+i2EZA26cZ7OBiBd/Uct5S3NP9IBqKx5b+MMNH1PhzTsk6J9nPQQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
 </Layout>

@@ -1,6 +1,6 @@
 ---
-import Layout from '../layouts/Default.astro';
-import SupportTicketDropdown from '../components/SupportTicketDropdown.astro';
+import Layout from '../layouts/Default.astro'
+import SupportTicketDropdown from '../components/SupportTicketDropdown.astro'
 const title = 'Ticket Details'
 ---
 
@@ -14,15 +14,15 @@ const title = 'Ticket Details'
       <div class="toolbar-end">
         <div class="under-links">
           <a href="#" class="under-link">
-            <i class="iconify" data-icon="feather:phone"></i>
+            <iconify-icon class="iconify" icon="lucide:phone"></iconify-icon>
             <span>Help</span>
           </a>
           <a href="#" class="under-link">
-            <i class="iconify" data-icon="feather:printer"></i>
+            <iconify-icon class="iconify" icon="lucide:printer"></iconify-icon>
             <span>Print</span>
           </a>
           <a href="#" class="under-link">
-            <i class="iconify" data-icon="feather:flag"></i>
+            <iconify-icon class="iconify" icon="lucide:flag"></iconify-icon>
             <span>Report</span>
           </a>
         </div>
@@ -50,10 +50,7 @@ const title = 'Ticket Details'
                 <div class="conversation-box">
                   <div class="content">
                     <p>Hi,</p>
-                    <p>
-                      It seems i have been delivered items that i have not
-                      ordered.
-                    </p>
+                    <p>It seems i have been delivered items that i have not ordered.</p>
                     <p>Can you please check the order again ?</p>
                     <p>Thanks a lot.</p>
                     <p>Christina</p>
@@ -81,17 +78,9 @@ const title = 'Ticket Details'
                 <div class="conversation-box">
                   <div class="content">
                     <p>Hello Alex,</p>
-                    <p>
-                      Of course, we would be happy to help you solve this issue.
-                    </p>
-                    <p>
-                      Iam going to double check with the order chain to see what
-                      went wrong.
-                    </p>
-                    <p>
-                      Can you please also confirm that the items you ordered were
-                      delivered too?
-                    </p>
+                    <p>Of course, we would be happy to help you solve this issue.</p>
+                    <p>Iam going to double check with the order chain to see what went wrong.</p>
+                    <p>Can you please also confirm that the items you ordered were delivered too?</p>
                     <p>Thank you very much.</p>
                     <p>Anthony Miller, customer support.</p>
                   </div>
@@ -118,14 +107,8 @@ const title = 'Ticket Details'
                 <div class="conversation-box">
                   <div class="content">
                     <p>Yes,</p>
-                    <p>
-                      I can confirm that the items i ordered were included in the
-                      delivery.
-                    </p>
-                    <p>
-                      Do you need additional details about the misdelivered items
-                      ?
-                    </p>
+                    <p>I can confirm that the items i ordered were included in the delivery.</p>
+                    <p>Do you need additional details about the misdelivered items ?</p>
                   </div>
                 </div>
               </div>
@@ -150,15 +133,8 @@ const title = 'Ticket Details'
                 <div class="conversation-box">
                   <div class="content">
                     <p>Perfect,</p>
-                    <p>
-                      Don't bother for products info, we identified the items that
-                      were misdelivered to you.
-                    </p>
-                    <p>
-                      One of our agents will come by your place and get the
-                      misdelivered products from you. Please excuse us for the
-                      trouble and again, thank you very much.
-                    </p>
+                    <p>Don't bother for products info, we identified the items that were misdelivered to you.</p>
+                    <p>One of our agents will come by your place and get the misdelivered products from you. Please excuse us for the trouble and again, thank you very much.</p>
                     <p>Anthony Miller, customer support.</p>
                   </div>
                 </div>
@@ -209,15 +185,9 @@ const title = 'Ticket Details'
           <div x-ref="composemessage" class="compose-message">
             <img src="/img/avatars/25.jpg" alt="user photo" />
             <div class="control">
-              <textarea
-                x-on:input="typeReply($event)"
-                id="compose-reply"
-                class="textarea"
-                rows="1"
-                placeholder="Write a message..."
-              ></textarea>
+              <textarea x-on:input="typeReply($event)" id="compose-reply" class="textarea" rows="1" placeholder="Write a message..."></textarea>
               <button class="button send-button">
-                <i class="iconify" data-icon="fluent:send-24-filled"></i>
+                <iconify-icon class="iconify" icon="fluent:send-24-filled"></iconify-icon>
               </button>
             </div>
           </div>
@@ -225,12 +195,8 @@ const title = 'Ticket Details'
           <div class="add-attachments small-uploader">
             <div class="upload">
               <input id="upload-attachments" type="file" accept="image/*" />
-              <img
-                class="main-preview"
-                src="https://via.placeholder.com/150x150"
-                alt=""
-              />
-              <i class="iconify" data-icon="feather:plus"></i>
+              <img class="main-preview" src="https://via.placeholder.com/150x150" alt="" />
+              <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
               <span>Add Attachment</span>
             </div>
 
@@ -266,7 +232,7 @@ const title = 'Ticket Details'
                   <div class="widget-list-item">
                     <div class="list-item-data">
                       <div class="icon-box is-primary is-small">
-                        <i class="iconify" data-icon="feather:credit-card"></i>
+                        <iconify-icon class="iconify" icon="lucide:credit-card"></iconify-icon>
                       </div>
                       <div class="item-info">
                         <span class="item-title">Purchase ID</span>
@@ -274,7 +240,7 @@ const title = 'Ticket Details'
                       </div>
                       <div class="item-action">
                         <a class="text-light">
-                          <i class="iconify" data-icon="feather:arrow-right"></i>
+                          <iconify-icon class="iconify" icon="lucide:arrow-right"></iconify-icon>
                         </a>
                       </div>
                     </div>
@@ -284,7 +250,7 @@ const title = 'Ticket Details'
                   <div class="widget-list-item">
                     <div class="list-item-data">
                       <div class="icon-box is-success is-small">
-                        <i class="iconify" data-icon="feather:clock"></i>
+                        <iconify-icon class="iconify" icon="lucide:clock"></iconify-icon>
                       </div>
                       <div class="item-info">
                         <span class="item-title">Priority</span>
@@ -292,7 +258,7 @@ const title = 'Ticket Details'
                       </div>
                       <div class="item-action">
                         <a class="text-light">
-                          <i class="iconify" data-icon="feather:arrow-right"></i>
+                          <iconify-icon class="iconify" icon="lucide:arrow-right"></iconify-icon>
                         </a>
                       </div>
                     </div>
@@ -302,7 +268,7 @@ const title = 'Ticket Details'
                   <div class="widget-list-item">
                     <div class="list-item-data">
                       <div class="icon-box is-info is-small">
-                        <i class="iconify" data-icon="feather:mail"></i>
+                        <iconify-icon class="iconify" icon="lucide:mail"></iconify-icon>
                       </div>
                       <div class="item-info">
                         <span class="item-title">Email</span>
@@ -310,7 +276,7 @@ const title = 'Ticket Details'
                       </div>
                       <div class="item-action">
                         <a class="text-light">
-                          <i class="iconify" data-icon="feather:arrow-right"></i>
+                          <iconify-icon class="iconify" icon="lucide:arrow-right"></iconify-icon>
                         </a>
                       </div>
                     </div>
@@ -334,7 +300,7 @@ const title = 'Ticket Details'
                       </div>
                       <div class="item-action">
                         <a class="text-light">
-                          <i class="iconify" data-icon="feather:arrow-right"></i>
+                          <iconify-icon class="iconify" icon="lucide:arrow-right"></iconify-icon>
                         </a>
                       </div>
                     </div>
@@ -352,7 +318,7 @@ const title = 'Ticket Details'
                       </div>
                       <div class="item-action">
                         <a class="text-light">
-                          <i class="iconify" data-icon="feather:arrow-right"></i>
+                          <iconify-icon class="iconify" icon="lucide:arrow-right"></iconify-icon>
                         </a>
                       </div>
                     </div>
@@ -370,7 +336,7 @@ const title = 'Ticket Details'
                       </div>
                       <div class="item-action">
                         <a class="text-light">
-                          <i class="iconify" data-icon="feather:arrow-right"></i>
+                          <iconify-icon class="iconify" icon="lucide:arrow-right"></iconify-icon>
                         </a>
                       </div>
                     </div>
