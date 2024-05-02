@@ -38,12 +38,9 @@ Main wrapper
         align-items: center;
         padding: 30px 0 20px 0;
 
-        > svg {
-          height: 22px;
-          width: 22px;
-          stroke: var(--light-text);
+        > .iconify {
+          font-size: 1.25rem;
           color: var(--light-text);
-          stroke-width: 1.4px;
           margin-#{$end-direction}: 8px;
         }
 
