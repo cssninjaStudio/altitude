@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/cssninjaStudio/altitude/compare/v2.3.1...v2.4.0) (2026-09-30)
+
+
+### ⚖️ License
+
+* relicense under MIT ([6c549b8](https://github.com/cssninjaStudio/altitude/commit/6c549b8f40928038beccd7e04ed876bd73dbb48e))
+
 ### [2.3.1](https://github.com/cssninjaStudio/altitude/compare/v2.3.0...v2.3.1) (2024-05-02)
 
 ## [2.3.0](https://github.com/cssninjaStudio/altitude/compare/v2.2.0...v2.3.0) (2024-04-14)
